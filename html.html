@@ -1,0 +1,52 @@
+<html>
+   <head>
+       <title>pizzaria
+       </title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+       <link rel="stylesheet" href="css.css">
+       <script src="js.js">
+       </script>
+ </head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#">Pizzaria
+        </a>
+        <div class="topnav-right">
+            <a href="#viewblock">View Menu
+            </a>
+            <a href="#addToppings">Add Menu
+            </a>
+        </div>
+    </div>
+    <div class="row"id="viewblock">
+        <div class="img_div">
+            <img class="img-responsive" src="https://t4.ftcdn.net/jpg/02/92/15/69/360_F_292156960_5C0FwgplLzkx76T5IZ0ryWNwKSzEUHtP.jpg">
+        </div>
+        <div class="menu_div">
+            <button id="menu_list"onclick="getmenu()">Show Menu
+            </button>
+            <div id="display_menu">
+            </div>
+        </div>
+    </div>
+    <div class="newRow"id="addToppings">
+        <div class="block1">
+            <input id="add_item"placeholder="type here to add toppings">
+            <button class="btn btn-success"onclick="add_top()">Add
+            </button>
+            <button id="add_Toppings"onclick="add_item()">Show Pizza
+            </button>
+        </div>
+        <div class="block2">
+            <div id="display_addedmenu">
+            </div>
+        </div>  
+    </div>
+    <div>
+        <img class="img_responsive"src="https://cdn1.vectorstock.com/i/1000x1000/28/40/set-different-pizza-top-vector-21222840.jpg">
+    </div>
+    </body>       
+</html>
